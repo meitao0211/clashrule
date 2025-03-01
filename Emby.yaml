@@ -1,2 +1,5 @@
-DOMAIN-SUFFIX,emby.moe
-DOMAIN-SUFFIX,niceduck.lol
+niceduck:
+  -DOMAIN-SUFFIX,emby.moe
+  -DOMAIN-SUFFIX,niceduck.lol
+
+
