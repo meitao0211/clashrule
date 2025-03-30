@@ -174,19 +174,19 @@ proxy-groups:
   - {name: 漏网之鱼, type: select, proxies: [默认代理, 直连], icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
   - {name: 全球手动, type: select, include-all: true, filter: *FilterAll, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png}
   - {name: 冷门自选, type: select, include-all: true, filter: *FilterOther, icon: https://git.imee.me/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png}
-  - {name: ChatGPT, <<: *SelectSG, icon: https://git.imee.me/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png}
+  - {name: ChatGPT, <<: *SelectUS, icon: https://git.imee.me/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png}
   - {name: AI平台, <<: *SelectUS, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png}
   - {name: Emby, type: select, include-all: true, filter: *FilterAll, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
   - {name: YouTube, <<: *SelectJP, icon: https://git.imee.me/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/youtube.png}
   - {name: NetFlix, <<: *SelectSG, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png}
   - {name: TikTok, <<: *SelectJP, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png}
   - {name: Disney, <<: *SelectSG, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png}
-  - {name: Spotify, <<: *SelectJP, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png}
+  - {name: Spotify, <<: *SelectFB, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png}
   - {name: HBO, <<: *SelectSG, icon: https://git.imee.me/https://raw.githubusercontent.com/Orz-3/mini/master/Color/HBO.png}
-  - {name: Telegram, <<: *SelectUS, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png}
+  - {name: Telegram, <<: *SelectJP, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png}
   - {name: Twitter, <<: *SelectUS, icon: https://git.imee.me/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/twitter(2).png}
-  - {name: 社交平台, <<: *SelectJP, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PBS.png}
-  - {name: 游戏平台, <<: *SelectJP, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  - {name: 社交平台, <<: *SelectFB, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PBS.png}
+  - {name: 游戏平台, <<: *SelectFB, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   - {name: 网速测试, type: select, include-all: true, filter: *FilterAll, icon: https://git.imee.me/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png}
   # 公司
   - {name: Github, <<: *SelectUS, icon: https://git.imee.me/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/github(1).png}
@@ -217,8 +217,7 @@ proxy-groups:
   - {name: 新加坡均衡-散列, <<: *LoadBalanceCH, filter: *FilterSG, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
   - {name: 日本均衡-散列, <<: *LoadBalanceCH, filter: *FilterJP, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
   - {name: 韩国均衡-散列, <<: *LoadBalanceCH, filter: *FilterKR, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
-  - {name: 美国均衡-散列, <<: *LoadBalanceCH, filter: *FilterUS, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
-  - {name: 欧盟均衡-散列, <<: *LoadBalanceCH, filter: *FilterEU, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
+  - {name: 美国均衡-散列, <<: *LoadBalanceCH, filter: *FilterUS, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.p
   # 负载均衡-轮询
   - {name: 香港均衡-轮询, <<: *LoadBalanceCR, filter: *FilterHK, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
   - {name: 台湾均衡-轮询, <<: *LoadBalanceCR, filter: *FilterTW, icon: https://git.imee.me/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
