@@ -42,8 +42,8 @@ ClassicalYaml: &ClassicalYaml {type: http, interval: 86400, behavior: classical,
 # 远程订阅组
 # 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义
 proxy-providers:
-  机场A: {<<: *PProviders, url: 'https://api.xmancdn.com/osubscribe.php?sid=130298&token=ZmJbJ8aJwwdJ&sip002=1', override: {additional-prefix: '[花云] '}}
-  机场B: {<<: *PProviders, url: 'https://sub.godya.cc/api/v1/client/subscribe?token=bc146de9ece9b6a43826738289d0d1d4', override: {additional-prefix: '[好鸭] '}}
+  花云: {<<: *PProviders, url: 'https://api.xmancdn.com/osubscribe.php?sid=130298&token=ZmJbJ8aJwwdJ&sip002=1', override: {additional-prefix: '[花云] '}}
+  好鸭: {<<: *PProviders, url: 'https://sub.godya.cc/api/v1/client/subscribe?token=bc146de9ece9b6a43826738289d0d1d4', override: {additional-prefix: '[好鸭] '}}
 
 # 全局配置
 port: 7890
