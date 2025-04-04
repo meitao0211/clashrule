@@ -126,6 +126,7 @@ proxy-groups:
   - {name: 社交平台,  <<: *SelectProxy, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/PBS.png}
   - {name: 游戏平台,  <<: *SelectProxy, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Game.png}
   - {name: 网速测试,  type: select, include-all: true, filter: *FilterAll, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Speedtest.png}
+  - {name: 国外媒体,  <<: *SelectJP, icon: https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/global_tv.png}
   # 公司
   - {name: Github,   <<: *SelectUS, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/GitHub.png}
   - {name: 微软服务,  <<: *SelectUS, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Microsoft.png}
@@ -194,7 +195,6 @@ rule-providers:
   apple-cn:                  {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/apple-cn.mrs}
   apple:                     {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/apple.mrs}
   paypal@cn:                 {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/paypal@cn.mrs}
-  paypal:                    {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/paypal.mrs}
   cloudflare-cn:             {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/cloudflare-cn.mrs}
   category-public-tracker:   {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-public-tracker.mrs}
   category-games:            {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-games.mrs}
@@ -203,6 +203,8 @@ rule-providers:
   category-social-media-!cn: {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-social-media-!cn.mrs}
   category-ai-!cn:           {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-ai-!cn.mrs}
   geolocation-!cn:           {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/geolocation-!cn.mrs}
+  porn:                      {<<: *DomainMrs, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.mrs}
+  Global-TV:                 {<<: *ClassicalText, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GlobalMedia/GlobalMedia.list}
   private_domain:            {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/private.mrs}
   cn_domain:                 {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/cn.mrs}
   # IP规则集
@@ -247,6 +249,8 @@ rules:
   - RULE-SET,apple-cn,国内网站
   - RULE-SET,apple,苹果服务
   - RULE-SET,paypal@cn,国内网站
+  - RULE-SET,porn,国外媒体
+  - RULE-SET,Global-TV,国外媒体
   - RULE-SET,cloudflare-cn,国内网站
   - RULE-SET,category-games,游戏平台
   - RULE-SET,category-media-cn,国内网站
