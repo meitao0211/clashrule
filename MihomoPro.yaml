@@ -218,7 +218,6 @@ rule-providers:
 
 # 路由
 rules:
-  - DOMAIN-SUFFIX,tanhuatv.site,国外媒体
   # >屏蔽QUIC
   - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT-DROP
   # 常用必备
