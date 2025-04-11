@@ -108,7 +108,7 @@ proxies:
 # 策略组 
 proxy-groups:
   - {name: 默认代理,   <<: *SelectFB, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Static.png}
-  - {name: AI平台,    <<: *SelectUS, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/AI.png}
+  - {name: AI平台,    <<: *SelectUS, include-all: true, filter: *FilterAll, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/AI.png}
   - {name: Emby,     type: select, include-all: true, filter: *FilterAll, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Emby.png}
   - {name: YouTube,  <<: *SelectJP, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/YouTube.png}
   - {name: NetFlix,  <<: *SelectSG, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Netflix.png}
