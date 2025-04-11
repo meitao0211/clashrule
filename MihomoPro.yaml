@@ -1,13 +1,3 @@
-# >>=====================================<<
-# ||                                     ||
-# ||      ██████╗  ██████╗  ██████╗      ||
-# ||     ██╔════╝ ██╔════╝ ██╔════╝      ||
-# ||     ███████╗ ███████╗ ███████╗      ||
-# ||     ██╔═══██╗██╔═══██╗██╔═══██╗     ||
-# ||     ╚██████╔╝╚██████╔╝╚██████╔╝     ||
-# ||      ╚═════╝  ╚═════╝  ╚═════╝      ||
-# ||                                     ||
-# >>=====================================<<
 # 名称: MihomoPro高大全 V3.9
 # 日期: 2025 年 4 月 11 日
 # 地址: https://github.com/666OS
@@ -129,7 +119,7 @@ proxy-groups:
   - {name: 货币平台,  <<: *SelectSG, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bitcloud.png}
   - {name: 游戏平台,  <<: *SelectProxy, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Game.png}
   - {name: 网速测试,  type: select, include-all: true, filter: *FilterAll, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Speedtest.png}
-  - {name: Porn,  <<: *SelectJP, icon: https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/global_tv.png}
+  - {name: porn,  <<: *SelectJP, icon: https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/global_tv.png}
   # 公司
   - {name: 微软服务,  <<: *SelectUS, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Microsoft.png}
   - {name: 谷歌服务,  <<: *SelectUS, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Google_Search.png}
@@ -192,6 +182,7 @@ rule-providers:
   netflix:                   {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/netflix.mrs}
   disney:                    {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/disney.mrs}
   hbo:                       {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/hbo.mrs}
+  primevideo:                {<<: *DomainMrs, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/primevideo.mrs}
   tiktok:                    {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/tiktok.mrs}
   github:                    {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/github.mrs}
   onedrive:                  {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/onedrive.mrs}
@@ -210,7 +201,7 @@ rule-providers:
   category-social-media-!cn: {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-social-media-!cn.mrs}
   category-ai-!cn:           {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-ai-!cn.mrs}
   geolocation-!cn:           {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/geolocation-!cn.mrs}
-  Porn:                      {<<: *DomainMrs, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.mrs}
+  porn:                      {<<: *DomainMrs, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.mrs}
   private_domain:            {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/private.mrs}
   cn_domain:                 {<<: *DomainMrs, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/cn.mrs}
   # IP规则集
@@ -243,6 +234,7 @@ rules:
   - RULE-SET,disney,国际媒体
   - RULE-SET,hbo,国际媒体
   - RULE-SET,tiktok,国际媒体
+  - RULE-SET,primevideo,国际媒体
   - RULE-SET,github,微软服务
   - RULE-SET,onedrive,微软服务
   - RULE-SET,microsoft,微软服务
@@ -259,7 +251,7 @@ rules:
   - RULE-SET,category-games,游戏平台
   - RULE-SET,Line,社交平台
   - RULE-SET,category-social-media-!cn,社交平台
-  - RULE-SET,Porn,Porn
+  - RULE-SET,porn,porn
   - RULE-SET,cn_domain,国内网站
   - RULE-SET,geolocation-!cn,国外网站
   # IP路由
