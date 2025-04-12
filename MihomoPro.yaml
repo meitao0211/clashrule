@@ -19,9 +19,9 @@ FilterOther: &FilterOther '^(?!.*(直连|港|台|新|日|韩|香港|台湾|新�
 FilterAll: &FilterAll '^(?!.*(直连|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'
 # 锚点 - 策略组
 UrlTest: &UrlTest {type: url-test, interval: 60, tolerance: 20, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, timeout: 2000, max-failed-times: 3, hidden: true, include-all: true, proxies: [REJECT]}
-FallBack: &FallBack {type: fallback, interval: 60, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, timeout: 2000, max-failed-times: 3, hidden: false}
-LoadBalanceCH: &LoadBalanceCH {type: load-balance, interval: 60, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, strategy: consistent-hashing, timeout: 2000, max-failed-times: 3, hidden: true, include-all: true}
-LoadBalanceCR: &LoadBalanceCR {type: load-balance, interval: 60, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, strategy: round-robin, timeout: 2000, max-failed-times: 3, hidden: true, include-all: true}
+FallBack: &FallBack {type: fallback, interval: 30, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, timeout: 2000, max-failed-times: 3, hidden: false}
+LoadBalanceCH: &LoadBalanceCH {type: load-balance, interval: 30, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, strategy: consistent-hashing, timeout: 2000, max-failed-times: 3, hidden: true, include-all: true}
+LoadBalanceCR: &LoadBalanceCR {type: load-balance, interval: 30, lazy: true, url: 'https://www.gstatic.com/generate_204', disable-udp: false, strategy: round-robin, timeout: 2000, max-failed-times: 3, hidden: true, include-all: true}
 
 # 锚点 - 选择组 
 SelectFB: &SelectFB {type: select, proxies: [故障转移, 香港策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 台湾策略, 欧盟策略, 冷门自选, 全球手动, 直连]}
@@ -167,7 +167,7 @@ proxy-groups:
 
 # 远程规则集
 rule-providers: 
-  location_ip:               {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/location_ip.yaml}
+  download:                  {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/download.yaml}
   XPTV:                      {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/XPTV.yaml}
   fix-direct:                {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/fix-direct.yaml}
   Line:                      {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/Line.yaml}
@@ -253,6 +253,7 @@ rules:
   - RULE-SET,category-social-media-!cn,社交平台
   - RULE-SET,porn,porn
   - RULE-SET,cn_domain,国内网站
+  - RULE-SET,download,直连
   - RULE-SET,geolocation-!cn,国外网站
   # IP路由
   - RULE-SET,private_ip,国内网站,no-resolve
