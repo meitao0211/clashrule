@@ -144,7 +144,7 @@ proxy-groups:
   - {name: 美国自动,        <<: *UrlTest, filter: *FilterUS, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Auto.png}
   - {name: 欧盟自动,        <<: *UrlTest, filter: *FilterEU, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Auto.png}
   # 负载均衡-散列
- - {name: 香港均衡-散列,   <<: *LoadBalanceCH, filter: *FilterHK, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Round_Robin_1.png}
+  - {name: 香港均衡-散列,   <<: *LoadBalanceCH, filter: *FilterHK, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Round_Robin_1.png}
   - {name: 台湾均衡-散列,   <<: *LoadBalanceCH, filter: *FilterTW, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Round_Robin_1.png}
   - {name: 新加坡均衡-散列, <<: *LoadBalanceCH, filter: *FilterSG, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Round_Robin_1.png}
   - {name: 日本均衡-散列,   <<: *LoadBalanceCH, filter: *FilterJP, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Round_Robin_1.png}
