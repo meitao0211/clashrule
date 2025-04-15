@@ -118,7 +118,7 @@ proxy-groups:
   - {name: 微软服务,  <<: *SelectUS, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Microsoft.png}
   - {name: 谷歌服务,  <<: *SelectUS, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Google_Search.png}
   - {name: 苹果服务,  <<: *SelectUS, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Apple.png}
-  - {name: 脸书服务,  <<: *SelectKR, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Facebook.png}
+  - {name: 脸书服务,  <<: *SelectProxy, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Facebook.png}
   # 地区策略
   - {name: 香港策略,  type: select, proxies: [香港自动, 香港均衡-散列, 香港均衡-轮询], include-all: true, filter: *FilterHK, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Hong_Kong.png}
   - {name: 新加坡策略,type: select, proxies: [新加坡自动, 新加坡均衡-散列, 新加坡均衡-轮询], include-all: true, filter: *FilterSG, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Singapore.png}
