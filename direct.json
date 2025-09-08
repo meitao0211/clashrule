@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "meitao.xyz",
+        "imee.me",
+        "ndmdhs.com",
+        "board.zash.run.place",
+        "xdrig.com",
+        "snssdk.com",
+        "sony.tv",
+        "acns.my.avira.com"
+      ]
+    }
+  ]
+}
