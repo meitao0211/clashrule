@@ -9,35 +9,35 @@
 }
 ,{
     "action": "route",
-    "outbound": "日本拼车",
+    "outbound": "JP-rfc",
     "rule_set": [
         "geosite-category-ai-!cn"
     ]
 }
 ,{
     "action": "route",
-    "outbound": "美国拼车",
+    "outbound": "JP-rfc",
     "rule_set": [
         "https://gh-proxy.com/https://raw.githubusercontent.com/meitao0211/clashrule/refs/heads/main/Emby.json"
     ]
 }
 ,{
     "action": "route",
-    "outbound": "马来西亚拼车",
+    "outbound": "MY-evoxt",
     "rule_set": [
         "geosite-netflix"
     ]
 }
 ,{
     "action": "route",
-    "outbound": "日本拼车",
+    "outbound": "JP-rfc",
     "rule_set": [
         "geosite-youtube"
     ]
 }
 ,{
     "action": "route",
-    "outbound": "美国拼车",
+    "outbound": "US-DMIT",
     "rule_set": [
         "geoip-google",
         "geosite-google"
@@ -45,7 +45,7 @@
 }
 ,{
     "action": "route",
-    "outbound": "美国拼车",
+    "outbound": "US-DMIT",
     "rule_set": [
         "geosite-twitter",
         "geoip-twitter"
@@ -53,7 +53,7 @@
 }
 ,{
     "action": "route",
-    "outbound": "美国拼车",
+    "outbound": "US-DMIT",
     "rule_set": [
         "geoip-github",
         "geosite-github"
@@ -61,7 +61,7 @@
 }
 ,{
     "action": "route",
-    "outbound": "美国拼车",
+    "outbound": "US-DMIT",
     "rule_set": [
         "geoip-telegram",
         "geosite-telegram"
@@ -69,21 +69,21 @@
 }
 ,{
     "action": "route",
-    "outbound": "美国拼车",
+    "outbound": "US-DMIT",
     "rule_set": [
         "geosite-instagram"
     ]
 }
 ,{
     "action": "route",
-    "outbound": "日本拼车",
+    "outbound": "JP-rfc",
     "rule_set": [
         "geosite-category-porn"
     ]
 }
 ,{
     "action": "route",
-    "outbound": "马来西亚拼车",
+    "outbound": "MY-evoxt",
     "rule_set": [
         "geosite-primevideo"
     ]
