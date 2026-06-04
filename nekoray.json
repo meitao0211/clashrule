@@ -123,6 +123,24 @@
         {
             "action": "route",
             "outbound": {
+                "password": "88a39b6a-c1f7-45b7-8c3d-de0b1a474099",
+                "server": "gogogoharntma.hardcorelinks.org",
+                "server_port": 26002,
+                "tag": "🇭🇰 HK-Go-02-JinX",
+                "tls": {
+                    "enabled": true,
+                    "insecure": true,
+                    "server_name": "mcdn.bilivideo.com"
+                },
+                "type": "trojan"
+            },
+            "rule_set": [
+                "geosite-microsoft"
+            ]
+        },
+        {
+            "action": "route",
+            "outbound": {
                 "flow": "",
                 "packet_encoding": "",
                 "server": "disk.fuckresearch.com",
