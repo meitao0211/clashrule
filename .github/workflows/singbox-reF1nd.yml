@@ -2,7 +2,7 @@ name: Build sing-box Full
 
 on:
   # 可选：每天自动构建（取消注释即可）
-   schedule:
+  schedule:
      - cron: '0 20 * * *'   # UTC 20:00 ≈ 北京时间次日 4:00
   workflow_dispatch:
     inputs:
